@@ -61,4 +61,4 @@ app.get('/:id', async function (req, res) {
   res.end(JSON.stringify(b));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
